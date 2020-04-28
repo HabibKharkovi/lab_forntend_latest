@@ -1,24 +1,25 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import PatientContent from './components/patient';
+import Sidebar from './components/sidebar';
+import Header from './components/header';
+import {Route} from 'react-router-dom';
+import './App.scss';
 
 function App() {
+
+  console.log('app')
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="lab">
+      <Sidebar/>
+      <div className="content-container">
+        <Header/>
+        <div className="main-content">
+            <Route path="/">
+              <PatientContent/>
+            </Route>
+        </div>
+      </div>
+
     </div>
   );
 }

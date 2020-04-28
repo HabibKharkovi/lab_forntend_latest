@@ -1,0 +1,44 @@
+.sidebar {
+    background-color: #2d2d2d;
+    max-width: 200px;
+    flex: 200px;
+    height: 100vh;
+    #patient_svg__Layer_1 {
+        width: 20px;
+    }
+    .brand-name {
+        height: 65px;
+        display: flex;
+        align-items: center;
+        padding: 10px;
+        justify-content: center;
+        color: #fff;
+        font-weight: bold;
+        line-height: 1;
+        font-size: 34px;
+        border-bottom: 1px solid #ddd;
+    }
+    .menu-list {
+        margin-top: 20px;
+        margin-bottom: 0;
+        padding-left: 15px;
+        padding-right: 15px;
+        .menu-link {
+            color: #fff;
+            display: flex;
+            align-items: center;
+            font-size: 15px;
+            position: relative;
+            padding-top: 14px;
+            padding-bottom: 14px;
+            .text {
+                display: block;
+                width: 100%;
+                padding-left: 33px;
+            }
+            svg {
+                position: absolute;
+            }
+        }
+    }
+}

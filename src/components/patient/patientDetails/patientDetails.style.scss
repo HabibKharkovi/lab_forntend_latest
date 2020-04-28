@@ -1,0 +1,71 @@
+.patient-details-wrapper {
+    .title {
+        margin-top: 10px;
+        margin-bottom: 23px;
+        font-size: 26px;
+    }
+    .name-field {
+        border-bottom: 1px solid #ddd;
+        padding-bottom: 10px;
+        margin-bottom: 20px;
+        font-size: 18px;
+        display: flex;
+        font-weight: bold;
+        .label {
+            width: 100px;
+            display: block;
+        }
+        .value {
+            color: #868686;
+        }
+        .status {
+            font-size: 14px;
+            margin-left: auto;
+            padding: 4px 10px;
+            background-color: #ffe70c;
+            border-radius: 4px;
+            color: #fff;
+        }
+    }
+    .patient-info {
+        display: flex;
+        justify-content: space-between;
+        .output-field {
+            display: flex;
+            margin-bottom: 10px;
+            font-weight: bold;
+            font-size: 14px;
+        }
+        .label {
+            width: 100px;
+            display: block;
+        }
+        .value {
+            color: #868686;
+        }
+    }
+    .patient-test {
+        margin-top: 20px;
+        .td.no {
+            max-width: 30px;
+            flex: 30px;
+        }
+        .test-name {
+            max-width: 300px;
+            flex: 300px;
+        }
+        .report {
+            flex: 1;
+        }
+    }
+    .btn-group {
+        display: flex;
+        margin-top: 26px;
+        .btn {
+            margin-left: 15px;
+            &:first-child {
+                margin-left: auto;
+            }
+        }
+    }
+}

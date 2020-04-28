@@ -1,0 +1,95 @@
+.patient-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    .box {
+        min-height: calc(100vh - 105px);
+    }
+    > .right {
+       flex: 1;
+       margin-left: 20px 
+    }
+    .search-group {
+        display: flex;
+        .control-group {
+            &:first-child {
+                margin-left: auto;
+            }
+            margin-left: 20px;
+            margin-bottom: 10px;
+        }
+        .lab_no {
+            max-width: 100px;
+            flex: 100px;
+        }
+        .mr_no {
+            max-width: 100px;
+            flex: 100px;
+        }
+        .name {
+            max-width: 200px;
+            flex: 200px;
+        }
+        .contact {
+            max-width: 120px;
+            flex: 120px;
+        }
+    }
+    .table {
+        .tr {
+            display: flex;
+            position: relative;
+            cursor: pointer;
+            .th {
+                font-size: 15px;
+                font-weight: bold;
+                padding: 10px 6px;
+                &:first-child {
+                    padding-left: 0;
+                }
+            }
+            .td {
+                padding: 10px 6px;
+                font-size: 14px;
+                &:first-child {
+                    padding-left: 0;
+                }
+            }
+            
+            &:hover {
+                .btn-group-wrapper {
+                    display: flex;
+                }
+            }
+        }
+        .lab_no {
+            flex: 100px;
+            max-width: 100px;
+        }
+        .age {
+            max-width: 100px;
+            flex: 100px;
+            margin-left: auto;
+            text-align: right;
+        }
+        .name {
+            max-width: 300px;
+            flex: 300px;
+        }
+        .contact {
+            max-width: 200px;
+            flex: 200px;
+            text-align: right;
+        }
+        .mr_no {
+            max-width: 200px;
+            flex: 200px;
+            text-align: right;
+        }
+        .title {
+            margin-top: 10px;
+            margin-bottom: 23px;
+            font-size: 26px;
+        }
+    }
+    
+}

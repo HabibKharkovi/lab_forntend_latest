@@ -1,0 +1,43 @@
+*,
+*:after,
+*::before {
+  box-sizing: border-box;
+}
+input,
+button,
+textarea {
+  outline: none;
+  box-shadow: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+ul {
+  padding-left: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.lab {
+  display: flex;
+}
+
+.content-container {
+  flex: 1;
+}
+
+.main-content {
+  padding: 20px;
+}
+
+.box {
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+}
+
