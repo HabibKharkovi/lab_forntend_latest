@@ -14,7 +14,7 @@ export default function PatientContent(){
             </div>
             <div className="right">
                 <div className="box">
-                    <Route path="/patientList">
+                    <Route path="/">
                        <PatientTable/> 
                     </Route>
                     <Route path="/patientDetails">

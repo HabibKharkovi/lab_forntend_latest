@@ -1,0 +1,40 @@
+.test-wrapper {
+    .box {
+        max-width: 700px;
+        .title {
+            margin-top: 10px;
+            margin-bottom: 23px;
+            font-size: 26px;
+        }
+        .test-form {
+            display: flex;
+            border-bottom: 1px solid #ddd;
+            justify-content: space-between;
+
+            .input-wrapper {
+                max-width: 155px;
+                border-radius: 5px;
+            }
+        }
+        .parameter-wrapper {
+            padding : 40px 10px 10px 10px;
+            display: flex;
+            flex-wrap: wrap;
+
+            .input-wrapper {
+                max-width: 125px;
+                border-radius: 5px;
+                margin-right: 10px;
+            }
+            .radio-group {
+                display: flex;
+                max-width: 230px;
+                .control-group {
+                    margin-right: 10px;
+                }
+            }
+
+        }
+    }
+    
+}

@@ -1,8 +1,9 @@
 import React from 'react';
 import PatientContent from './components/patient';
+import ServiceContent from './components/services';
 import Sidebar from './components/sidebar';
 import Header from './components/header';
-import {Route} from 'react-router-dom';
+import {Route,Switch} from 'react-router-dom';
 import './App.scss';
 
 function App() {
@@ -14,9 +15,14 @@ function App() {
       <div className="content-container">
         <Header/>
         <div className="main-content">
-            <Route path="/">
-              <PatientContent/>
-            </Route>
+            <Switch>
+              <Route exact path="/patient">
+                <PatientContent/>
+              </Route>
+              <Route path='/test'>
+                <ServiceContent/>
+              </Route>
+            </Switch>
         </div>
       </div>
 

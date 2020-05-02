@@ -12,7 +12,8 @@ export default function Sidebar(){
             </div>
             <ul className="menu-list">
                 <li className="menu-item">
-                    <Link className="menu-link" to="/patientList"><Patient/> <span className="text">New Patient</span></Link>
+                    <Link className="menu-link" to="/patient"><Patient/> <span className="text">New Patient</span></Link>
+                    <Link className="menu-link" to="/test"><Patient/> <span className="text">Services</span></Link>
                 </li>
             </ul>
         </div>
